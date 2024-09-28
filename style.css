@@ -1,0 +1,49 @@
+body {
+    background-color: #f0f4f8; /* Светлый фон */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Центрирование контейнера */
+    padding: 20px;
+    background: white; /* Белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+h1 {
+    text-align: center; /* Центрированный текст */
+    color: #333;
+}
+
+.accordion {
+    border-top: 1px solid #ccc; /* Верхняя граница */
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc; /* Нижняя граница для отдельных элементов */
+}
+
+.accordion-header {
+    padding: 15px; /* Отступы вокруг заголовка */
+    background-color: #3498db; /* Цвет фона заголовка */
+    color: white; /* Цвет текста заголовка */
+    cursor: pointer; /* Указатель курсора */
+    transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.accordion-header:hover {
+    background-color: #2980b9; /* Темнее при наведении */
+}
+
+.accordion-content {
+    max-height: 0; /* Скрыто по умолчанию */
+    overflow: hidden; /* Скрытие переполнения */
+    padding: 0 15px; /* Отступы */
+    background-color: #f9f9f9; /* Цвет фона содержимого */
+    transition: max-height 0.3s ease; /* Плавный переход высоты */
+    color: #555; /* Цвет текста содержимого */
+}
